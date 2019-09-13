@@ -1,0 +1,5 @@
+---
+cassandra22x_num_tokens: 8
+cassandra22x_trickle_fsync: true
+cassandra22x_endpoint_snitch: GossipingPropertyFileSnitch
+cassandra22x_g1gc_MAX_HEAP_SIZE: 2G

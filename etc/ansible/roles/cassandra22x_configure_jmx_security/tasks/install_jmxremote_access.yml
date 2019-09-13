@@ -1,0 +1,8 @@
+---
+- name: install jmxremote.access
+  template:
+    src: jmxremote.access
+    dest: "{{ cassandra22x_jmxremote_access }}"
+    owner: root
+    group: root    
+    mode: "{{ cassandra22x_root_default_file_mode }}"

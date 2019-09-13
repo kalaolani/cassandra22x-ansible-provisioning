@@ -1,0 +1,38 @@
+---
+cassandra22x_cluster_name: clustery
+cassandra22x_cluster_seeds: cassy.deltakappa.com
+cassandra22x_var_path: /var/lib/cassandra
+cassandra22x_data_path: "{{ cassandra22x_var_path }}/data"
+cassandra22x_conf_path: /etc/cassandra/conf
+cassandra22x_yaml: "{{ cassandra22x_conf_path }}/cassandra.yaml"
+cassandra22x_cassandra_conf_file_mode: "u=rx,g=rx,o=rwx"
+cassandra22x_system_ks_configuration: "'class': 'NetworkTopologyStrategy', 'dc1': '1'"
+cassandra22x_rackdc_properties: "{{ cassandra22x_conf_path }}/cassandra-rackdc.properties"
+cassandra22x_env: "{{ cassandra22x_conf_path }}/cassandra-env.sh"  
+
+cassandra22x_default_superuser: cassandra
+cassandra22x_default_superuser_password: cassandra
+cassandra22x_remote_jmx_user: ansible
+cassandra22x_remote_jmx_pass: ansible
+
+cassandra22x_ansible_superuser: ansible
+cassandra22x_ansible_superuser_password: ansible
+
+# new cluster values
+# cassandra22x_reboot_safe: true
+# cassandra22x_cassandra_auto_bootstrap: false
+# cassandra22x_cassandra_enable_safe: true
+# cassandra22x_cassandra_restart_safe: true
+
+# operating cluster values
+cassandra22x_reboot_safe: false
+cassandra22x_cassandra_auto_bootstrap: false
+cassandra22x_cassandra_enable_safe: false
+cassandra22x_cassandra_restart_safe: false
+
+cassandra22x_system_auth_mod: false
+cassandra22x_system_distributed_mod: false
+cassandra22x_system_traces_mod: false
+cassandra22x_configure_default_cql_users: false
+
+cassandra22x_log_path: /var/log/cassandra

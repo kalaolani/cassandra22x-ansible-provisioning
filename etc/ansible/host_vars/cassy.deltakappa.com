@@ -1,0 +1,5 @@
+---
+cassandra22x_reboot_safe: true
+cassandra22x_cassandra_auto_bootstrap: false
+cassandra22x_cassandra_enable_safe: true
+cassandra22x_cassandra_restart_safe: true
